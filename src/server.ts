@@ -18,6 +18,8 @@ app.get("/", (req: Request, res: Response) => {
 
 app.use(mainRouter);
 
+app.use(middlewares.errorHandler);
+
 app.listen(port, () => {
     console.log(`Example App listening on port ${port}`);
 });
