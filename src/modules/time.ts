@@ -2,11 +2,11 @@ import { formatISO } from "date-fns";
 import { utcToZonedTime } from "date-fns-tz";
 
 export const printAsIso = function (date: Date): string {
-    const timezone = "Asia/Seoul";
-    const zonedTime = utcToZonedTime(date, timezone);
-    return formatISO(zonedTime);
-}
+  const timezone = "Asia/Seoul";
+  const zonedTime = utcToZonedTime(date, timezone);
+  return formatISO(zonedTime);
+};
 
 export default {
-    printAsIso,
+  printAsIso,
 };

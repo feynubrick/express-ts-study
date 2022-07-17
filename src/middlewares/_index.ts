@@ -4,6 +4,6 @@ export { default as errorHandler } from "./error-handler";
 import requestLogger from "./request-logger";
 import errorHandler from "./error-handler";
 export default {
-    requestLogger,
-    errorHandler,
+  requestLogger,
+  errorHandler,
 };

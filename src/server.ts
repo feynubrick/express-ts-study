@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(middlewares.requestLogger);
 
 app.get("/", (req: Request, res: Response) => {
-    res.send("Hello World!");
+  res.send("Hello World!");
 });
 
 app.use(mainRouter);
@@ -21,5 +21,5 @@ app.use(mainRouter);
 app.use(middlewares.errorHandler);
 
 app.listen(port, () => {
-    console.log(`Example App listening on port ${port}`);
+  console.log(`Example App listening on port ${port}`);
 });
