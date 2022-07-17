@@ -37,6 +37,10 @@
       "eslint --config .eslintrc.cjs --cache --fix",
       "prettier --config .prettierrc.cjs --write"
     ],
+    "*.cjs": [
+      "eslint --config .eslintrc.cjs --cache --fix",
+      "prettier --config .prettierrc.cjs --write"
+    ],
     "*.json": "prettier --config .prettierrc.cjs --write"
   }
 }
