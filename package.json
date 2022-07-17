@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
+    "build": "npx tsc",
     "dev": "npx tsnd src/server.ts"
   },
   "keywords": [],
