@@ -1,7 +1,7 @@
-import resStatusCode from "./constants/http-response-status-codes";
+import STATUS_CODE from "./constants/http-response-status-codes";
 
 export class CustomError extends Error {
-  statusCode: number = resStatusCode.INTERNAL_SERVER_ERROR;
+  statusCode: number = STATUS_CODE.INTERNAL_SERVER_ERROR_500;
 
   constructor(message: string) {
     super(message);
@@ -10,7 +10,7 @@ export class CustomError extends Error {
 }
 
 export class QueryParameterError extends CustomError {
-  statusCode: number = resStatusCode.BAD_REQUEST;
+  statusCode: number = STATUS_CODE.BAD_REQUEST_400;
 
   constructor(message: string) {
     super(message);
@@ -19,7 +19,7 @@ export class QueryParameterError extends CustomError {
 }
 
 export class RequestBodyError extends CustomError {
-  statusCode: number = resStatusCode.BAD_REQUEST;
+  statusCode: number = STATUS_CODE.BAD_REQUEST_400;
 
   constructor(message: string) {
     super(message);
