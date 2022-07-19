@@ -5,7 +5,6 @@ export class CustomError extends Error {
 
   constructor(message: string) {
     super(message);
-    Object.setPrototypeOf(this, CustomError.prototype);
   }
 }
 
@@ -14,7 +13,6 @@ export class QueryParameterError extends CustomError {
 
   constructor(message: string) {
     super(message);
-    Object.setPrototypeOf(this, QueryParameterError.prototype);
   }
 }
 
@@ -23,6 +21,5 @@ export class RequestBodyError extends CustomError {
 
   constructor(message: string) {
     super(message);
-    Object.setPrototypeOf(this, RequestBodyError.prototype);
   }
 }
